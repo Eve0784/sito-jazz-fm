@@ -10,5 +10,45 @@ html,body{
 
 .container{
     display: grid;
-    grid-row: ;
+    grid-template-rows: 100vh 220vh 300vh 220vh 150vh 90vh 90vh 100vh 200vh;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: 
+    "header header"
+    "img1 img1"
+    "menu1 menu1"
+    "img2 img2"
+    "menu-sett menu-sett"
+    "banner banner"
+    "jazz-rom jazz-rom"
+    "img3 img3"
+    "footer footer"
+    ;
+}
+.area-header{
+    grid-area: header;
+}
+
+.area-img1{
+    grid-area: img1;
+}
+.area-menu1{
+    grid-area: menu1;
+}
+.area-img2{
+    grid-area: img2;
+}
+.area-menu-sett{
+    grid-area: menu-sett;
+}
+.area-banner{
+    grid-area: banner;
+}
+.area-jazz-rom{
+    grid-area: jazz-rom;
+}
+.area-img3{
+    grid-area: img3;
+}
+.area-footer{
+    grid-area: footer;
 }
