@@ -16,7 +16,7 @@ div {
 /*----------------------- Container-------------------------- */
 .container {
     display: grid;
-    grid-template-rows: 100vh 247vh 500vh 247vh 500vh 247vh 220vh 220vh 150vh;
+    grid-template-rows: 100vh 247vh 500vh 247vh 335vh 247vh 220vh 220vh 150vh;
     grid-template-columns: 100vw;
     grid-template-areas:
         "header"
@@ -101,7 +101,6 @@ div {
 }
 .illu1-remake {
     width: 100%;
-    /* height: 247vh; */
 }
 .background-purple {
     background-color: #660099;
@@ -171,12 +170,6 @@ div {
          /* --------------1-FM Menu---------------*/
 .area-section2A2B {
     grid-area: section2A2B;
-}
-.border-bottom {
-    border-bottom: solid black 1px;
-}
-.num-size {
-    font-size: 4rem;
 }
 table {
     border-collapse: collapse;
@@ -360,6 +353,7 @@ tr {
     "section5B" 
     "section5C" 
     "section5D";
+    align-self: self-end;
 }
 .tit-h1{
     font-size: 8rem;
@@ -380,6 +374,8 @@ tr {
 }
  .illu-piano {
     margin-top: 16rem;
+
+
   }
   .align-item-center{
     text-align: center;
@@ -387,6 +383,15 @@ tr {
 /*--------------------------- SECTION 6 ---------------------*/
 .area-section6 {
     grid-area: section6;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "section6A section6B";
+}
+.area-section6A {
+    grid-area: section6A;
+}
+.area-section6B {
+    grid-area: section6B;
 }
 .background-light-blue{
     background-color: #0099ff;
@@ -468,6 +473,12 @@ a {
 }
 .box-sizing{
     box-sizing: inherit;
+}
+.border-bottom {
+    border-bottom: solid black 1px;
+}
+.num-size {
+    font-size: 4rem;
 }
        /* ---------------Margin------------- */
 .margin-right{
